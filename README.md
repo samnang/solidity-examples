@@ -1,8 +1,10 @@
 # Crypto Market Pool - Solidity
 
-This is a collection of example codes from  [Crypto Market Pool - Solidity](https://cryptomarketpool.com/getting-started-with-solidity/). Feel free to clone it and playaround because I have added tests for each contract's example on the website.
+This is a collection of example codes from  [Crypto Market Pool - Solidity](https://cryptomarketpool.com/getting-started-with-solidity/).
 
 ## How to Run Examples
+
+Feel free to clone and playaround with each example to understand the Solidity programming language.
 
 ```sh
 $ npx hardhat test
