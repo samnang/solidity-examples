@@ -7,7 +7,7 @@ describe("Data Types / MyContract", function () {
 
   beforeEach(async () => {
     [owner] = await ethers.getSigners();
-    const Contract = await ethers.getContractFactory("contracts/02_constructors/01_MyContract.sol:MyContract", owner);
+    const Contract = await ethers.getContractFactory("contracts/02_constructors/MyContract.sol:MyContract", owner);
     contract = await Contract.deploy(5, 10);
     await contract.deployed();
   });

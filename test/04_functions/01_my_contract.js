@@ -5,7 +5,7 @@ describe("Functions / MyContract", function () {
   let contract;
 
   beforeEach(async () => {
-    const Contract = await ethers.getContractFactory("contracts/04_functions/01_MyContract.sol:MyContract");
+    const Contract = await ethers.getContractFactory("contracts/04_functions/MyContract.sol:MyContract");
     contract = await Contract.deploy();
     await contract.deployed();
   });

@@ -6,7 +6,7 @@ describe("Variables / SampleContract", function () {
   let owner;
 
   beforeEach(async () => {
-    const Contract = await ethers.getContractFactory("contracts/03_variables/01_SampleContract.sol:SampleContract");
+    const Contract = await ethers.getContractFactory("contracts/03_variables/SampleContract.sol:SampleContract");
     contract = await Contract.deploy();
     await contract.deployed();
   });
