@@ -1,7 +1,7 @@
 const { expect } = require("chai");
 const { ethers } = require("hardhat");
 
-describe("Data Types / MyContract", function () {
+describe("Constructors", function () {
   let contract;
   let owner;
 
