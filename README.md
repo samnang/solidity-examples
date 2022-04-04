@@ -37,6 +37,10 @@ $ npx hardhat test
 23. [Libraries](contracts/solidity_by_examples/23_libraries/)
 24. [Interface](contracts/solidity_by_examples/24_interface/)
 
+## Sample Apps
+1. [Sample Contract](contracts/sample_apps/01_sample_contract/)
+2. [Address Book](contracts/sample_apps/02_address_book/)
+
 ## Contributors
 
 * [Samnang Chhun](https://twitter.com/samnangchhun)
