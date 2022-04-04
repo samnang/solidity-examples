@@ -1,7 +1,7 @@
 const { expect } = require("chai");
 const { ethers } = require("hardhat");
 
-describe("Mapping / NestedMapsContract", function () {
+describe("Solidity By Examples / Mapping / NestedMapsContract", function () {
   let contract;
 
   beforeEach(async () => {

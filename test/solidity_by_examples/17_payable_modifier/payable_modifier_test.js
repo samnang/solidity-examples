@@ -1,7 +1,7 @@
 const { expect } = require("chai");
 const { ethers } = require("hardhat");
 
-describe("Payable Modifier", function () {
+describe("Solidity By Examples / Payable Modifier", function () {
   let contract;
   let owner, signer;
 

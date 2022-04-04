@@ -1,7 +1,7 @@
 const { expect } = require("chai");
 const { ethers } = require("hardhat");
 
-describe("If Statement", function () {
+describe("Solidity By Examples / If Statement", function () {
   let contract;
 
   beforeEach(async () => {

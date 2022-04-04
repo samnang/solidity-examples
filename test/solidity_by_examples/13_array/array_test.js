@@ -1,7 +1,7 @@
 const { expect } = require("chai");
 const { ethers } = require("hardhat");
 
-describe("Array", function () {
+describe("Solidity By Examples / Array", function () {
   let contract;
 
   beforeEach(async () => {
