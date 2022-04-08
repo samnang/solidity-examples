@@ -41,6 +41,7 @@ $ npx hardhat test
 1. [Sample Contract](contracts/sample_apps/01_sample_contract/)
 2. [Address Book](contracts/sample_apps/02_address_book/)
 2. [Hotel Room](contracts/sample_apps/03_hotel/)
+2. [Time lock](contracts/sample_apps/04_time_lock/)
 
 ## Contributors
 
