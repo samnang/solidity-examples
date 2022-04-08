@@ -4,7 +4,8 @@ pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 
-// The time lock Solidity smart contract below demonstrates how to use the passing of time in a Solidity smart contract. Think of this contract like a weekly allowance or escrow that needs to pay out weekly.
+// The time lock Solidity smart contract below demonstrates how to use the passing of time in a Solidity smart contract.
+// Think of this contract like a weekly allowance or escrow that needs to pay out weekly.
 //
 // overflow and underflow examples and preventions
 // one can deposit ether into this contract but you must wait 1 week before you can withdraw your funds
