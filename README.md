@@ -40,6 +40,7 @@ $ npx hardhat test
 ## Sample Apps
 1. [Sample Contract](contracts/sample_apps/01_sample_contract/)
 2. [Address Book](contracts/sample_apps/02_address_book/)
+2. [Hotel Room](contracts/sample_apps/03_hotel/)
 
 ## Contributors
 
