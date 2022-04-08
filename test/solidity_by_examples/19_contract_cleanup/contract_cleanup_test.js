@@ -7,7 +7,7 @@ describe("Solidity By Examples / Contract Cleanup", function () {
 
   beforeEach(async () => {
     [owner] = await ethers.getSigners();
-    const Contract = await ethers.getContractFactory("contracts/solidity_by_examples/19_contract_cleanup/MyContract.sol:MyContract", owner);
+    const Contract = await ethers.getContractFactory("contracts/getting_started_with_solidity/19_contract_cleanup/MyContract.sol:MyContract", owner);
     contract = await Contract.deploy({value: ethers.utils.parseEther("1")});
     await contract.deployed();
   });

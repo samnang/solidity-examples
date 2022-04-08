@@ -7,7 +7,7 @@ describe("Solidity By Examples / Payable Modifier", function () {
 
   beforeEach(async () => {
     [owner, signer] = await ethers.getSigners();
-    const Contract = await ethers.getContractFactory("contracts/solidity_by_examples/17_payable_modifier/MyContract.sol:MyContract", owner);
+    const Contract = await ethers.getContractFactory("contracts/getting_started_with_solidity/17_payable_modifier/MyContract.sol:MyContract", owner);
     contract = await Contract.deploy({value: 100});
     await contract.deployed();
   });

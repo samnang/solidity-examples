@@ -7,7 +7,7 @@ describe("Solidity By Examples / Constructors", function () {
 
   beforeEach(async () => {
     [owner] = await ethers.getSigners();
-    const Contract = await ethers.getContractFactory("contracts/solidity_by_examples/02_constructors/MyContract.sol:MyContract", owner);
+    const Contract = await ethers.getContractFactory("contracts/getting_started_with_solidity/02_constructors/MyContract.sol:MyContract", owner);
     contract = await Contract.deploy(5, 10);
     await contract.deployed();
   });

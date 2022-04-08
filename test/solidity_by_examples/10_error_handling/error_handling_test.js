@@ -5,7 +5,7 @@ describe("Solidity By Examples / Error Handling", function () {
   let contract;
 
   beforeEach(async () => {
-    const Contract = await ethers.getContractFactory("contracts/solidity_by_examples/10_error_handling/MyContract.sol:MyContract");
+    const Contract = await ethers.getContractFactory("contracts/getting_started_with_solidity/10_error_handling/MyContract.sol:MyContract");
     contract = await Contract.deploy();
     await contract.deployed();
   });

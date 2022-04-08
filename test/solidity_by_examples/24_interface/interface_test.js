@@ -7,7 +7,7 @@ describe("Solidity By Examples / Interface", function () {
 
   beforeEach(async () => {
     [owner, anotherAccount] = await ethers.getSigners();
-    const Contract = await ethers.getContractFactory("contracts/solidity_by_examples/24_interface/MyContract.sol:MyContract", owner);
+    const Contract = await ethers.getContractFactory("contracts/getting_started_with_solidity/24_interface/MyContract.sol:MyContract", owner);
     contract = await Contract.deploy();
     await contract.deployed();
   });

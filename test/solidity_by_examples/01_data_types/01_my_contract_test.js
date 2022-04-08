@@ -5,7 +5,7 @@ describe("Solidity By Examples / Data Types / MyContract", function () {
   let contract;
 
   beforeEach(async () => {
-    const Contract = await ethers.getContractFactory("contracts/solidity_by_examples/01_data_types/01_MyContract.sol:MyContract");
+    const Contract = await ethers.getContractFactory("contracts/getting_started_with_solidity/01_data_types/01_MyContract.sol:MyContract");
     contract = await Contract.deploy();
     await contract.deployed();
   });

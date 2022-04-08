@@ -6,7 +6,7 @@ describe("Solidity By Examples / Variables", function () {
   let owner;
 
   beforeEach(async () => {
-    const Contract = await ethers.getContractFactory("contracts/solidity_by_examples/03_variables/SampleContract.sol:SampleContract");
+    const Contract = await ethers.getContractFactory("contracts/getting_started_with_solidity/03_variables/SampleContract.sol:SampleContract");
     contract = await Contract.deploy();
     await contract.deployed();
   });
