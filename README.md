@@ -51,6 +51,7 @@ $ npx hardhat test
 We love pull requests from everyone. By participating in submitting examples, we believe other people will find them useful when they getting started with Solidity.
 
 * [Samnang Chhun](https://twitter.com/samnangchhun)
+* [Web3 Together](https://twitter.com/web3together)
 
 ## License
 
