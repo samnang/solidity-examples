@@ -1,12 +1,12 @@
 {
-  "name": "cryptomarketpool-solidity",
+  "name": "solidity-examples",
   "version": "1.0.0",
-  "description": "",
+  "description": "Collection of Solidity Examples",
   "main": "index.js",
   "scripts": {
     "test": "hardhat test"
   },
-  "keywords": [],
+  "keywords": ["Solidity", "Smart Contracts", "Web3", "Ethereum", "Solidity Examples"],
   "author": "Samnang Chhun",
   "license": "MIT",
   "devDependencies": {
