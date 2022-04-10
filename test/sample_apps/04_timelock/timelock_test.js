@@ -12,7 +12,7 @@ describe("Sample Apps / Timelock", function () {
     await contract.deployed();
   });
 
-  it("Should be able to verify all variables", async function () {
+  it("Should be able to verify all variable values", async function () {
     await contract.connect(signer1).deposit({value: ethers.utils.parseEther("1")});
 
     expect(await contract.balances(signer1.address)).to.equal(ethers.utils.parseEther("1"));

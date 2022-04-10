@@ -12,7 +12,7 @@ describe("Sample Apps / Address Book", function () {
     await contract.deployed();
   });
 
-  it("Should be able to verify all variables", async function () {
+  it("Should be able to verify all variable values", async function () {
     await contract.addContact(contact1.address, "john");
     await contract.addContact(contact2.address, "ali");
 

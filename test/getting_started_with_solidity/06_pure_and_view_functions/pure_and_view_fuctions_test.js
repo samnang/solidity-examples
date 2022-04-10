@@ -1,20 +1,17 @@
 const { expect } = require("chai");
 const { ethers } = require("hardhat");
 
-describe("Sample Apps / Sample Contract", function () {
+describe("Solidity By Examples / Pure and View Functions", function () {
   let contract;
 
   beforeEach(async () => {
-    const Contract = await ethers.getContractFactory("contracts/sample_apps/01_sample_contract/MyContract.sol:MyContract");
+    const Contract = await ethers.getContractFactory("contracts/getting_started_with_solidity/06_pure_and_view_functions/MyContract.sol:MyContract");
     contract = await Contract.deploy();
     await contract.deployed();
   });
 
   it("Should be able to verify all variable values", async function () {
-    await contract.setAge(40);
-    await contract.setName("John Doe");
-
-    expect(await contract.getAge()).to.equal(40);
     expect(await contract.getName()).to.equal("John Doe");
+    expect(await contract.sum(1, 2)).to.equal(3);
   });
 });

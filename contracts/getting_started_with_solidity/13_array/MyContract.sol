@@ -34,7 +34,7 @@ contract MyContract {
     myArray.pop();
   }
 
-  function getLegth() public view returns(uint) {
+  function getLength() public view returns(uint) {
     return myArray.length;
   }
 }

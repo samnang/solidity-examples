@@ -12,15 +12,24 @@ describe("Sample Apps / Hotel", function () {
     await contract.deployed();
   });
 
-  it("Should be able to verify all variables", async function () {
+  it("Should be able to verify all variable values", async function () {
     await expect(
-      signer1.sendTransaction({to: contract.address, value: ethers.utils.parseEther("1")})
+      signer1.sendTransaction({
+        to: contract.address,
+        value: ethers.utils.parseEther("1")
+      })
     ).to.be.revertedWith("Not enough Ether provided");
 
-    await signer1.sendTransaction({to: contract.address, value: ethers.utils.parseEther("2")});
+    await signer1.sendTransaction({
+      to: contract.address,
+      value: ethers.utils.parseEther("2")
+    });
 
     await expect(
-      signer1.sendTransaction({to: contract.address, value: ethers.utils.parseEther("2")})
+      signer1.sendTransaction({
+        to: contract.address,
+        value: ethers.utils.parseEther("2")
+      })
     ).to.be.revertedWith("Currently Occupied");
   });
 });
