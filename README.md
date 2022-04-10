@@ -44,6 +44,7 @@ $ npx hardhat test
 3. [Hotel Room](contracts/sample_apps/03_hotel/)
 4. [Time lock](contracts/sample_apps/04_time_lock/)
 5. [ERC20 Token](contracts/sample_apps/05_ERC20_token/)
+5. [Shared Wallet](contracts/sample_apps/06_shared_wallet/)
 
 ## Contributors
 
