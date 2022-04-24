@@ -46,6 +46,9 @@ $ npx hardhat test
 5. [ERC20 Token](contracts/sample_apps/05_ERC20_token/)
 5. [Shared Wallet](contracts/sample_apps/06_shared_wallet/)
 
+## Solidity by Examples
+1. [Ether Wallet](contracts/solidity_by_examples/01_ether_wallet/)
+
 ## Contributors
 
 We love pull requests from everyone. By participating in submitting examples, we believe other people will find them useful when they getting started with Solidity.
