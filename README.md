@@ -45,6 +45,7 @@ $ npx hardhat test
 4. [Time lock](contracts/sample_apps/04_time_lock/)
 5. [ERC20 Token](contracts/sample_apps/05_ERC20_token/)
 5. [Shared Wallet](contracts/sample_apps/06_shared_wallet/)
+5. [Swap Token](contracts/sample_apps/07_token_swap/)
 
 ## Solidity by Examples
 1. [Ether Wallet](contracts/solidity_by_examples/01_ether_wallet/)
