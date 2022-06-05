@@ -50,6 +50,7 @@ $ npx hardhat test
 
 ## Solidity by Examples
 1. [Ether Wallet](contracts/solidity_by_examples/01_ether_wallet/)
+1. [Multi Sig Wallet](contracts/solidity_by_examples/02_multi_sig_wallet/)
 
 ## Contributors
 
