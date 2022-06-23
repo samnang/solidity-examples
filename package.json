@@ -10,7 +10,7 @@
   "author": "Samnang Chhun",
   "license": "MIT",
   "devDependencies": {
-    "@nomiclabs/hardhat-ethers": "^2.0.3",
+    "@nomiclabs/hardhat-ethers": "^2.0.6",
     "@nomiclabs/hardhat-waffle": "^2.0.1",
     "@openzeppelin/contracts": "^4.5.0",
     "chai": "^4.3.4",
