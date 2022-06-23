@@ -1,4 +1,4 @@
-on: [push, pull_request]
+on: push
 name: CI
 
 jobs:
@@ -14,16 +14,3 @@ jobs:
           cache: 'npm'
       - run: npm ci
       - run: npm test
-
-  automerge:
-    needs: build
-    runs-on: ubuntu-latest
-
-    permissions:
-      pull-requests: write
-      contents: write
-
-    steps:
-      - uses: fastify/github-action-merge-dependabot@v3
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
