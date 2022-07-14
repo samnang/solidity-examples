@@ -44,9 +44,10 @@ $ npx hardhat test
 3. [Hotel Room](contracts/sample_apps/03_hotel/)
 4. [Time lock](contracts/sample_apps/04_time_lock/)
 5. [ERC20 Token](contracts/sample_apps/05_ERC20_token/)
-5. [Shared Wallet](contracts/sample_apps/06_shared_wallet/)
-5. [Swap Token](contracts/sample_apps/07_token_swap/)
-5. [Swap Token](contracts/sample_apps/08_eth_game/)
+6. [Shared Wallet](contracts/sample_apps/06_shared_wallet/)
+7. [Swap Token](contracts/sample_apps/07_token_swap/)
+8. [ETH Game](contracts/sample_apps/08_eth_game/)
+9. [ETH Game](contracts/sample_apps/09_ballot/)
 
 ## Solidity by Examples
 1. [Ether Wallet](contracts/solidity_by_examples/01_ether_wallet/)
