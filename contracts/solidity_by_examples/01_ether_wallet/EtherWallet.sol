@@ -9,7 +9,7 @@ An example of a basic wallet.
   Only the owner can withdraw.
 */
 
-pragma solidity ^0.8.10;
+pragma solidity ^0.8.9;
 
 contract EtherWallet {
   address payable public owner;

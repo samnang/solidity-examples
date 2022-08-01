@@ -46,8 +46,10 @@ describe("Sample Apps / Shared Wallet", function () {
       value: ethers.utils.parseEther("1")
     });
 
-    const previousBalance = await contract.provider.getBalance(signer2.address);
+    const previousBalance = await signer2.getBalance();
     await contract.connect(signer1).transferTo(signer2.address, ethers.utils.parseEther("0.5"));
-    expect(await contract.provider.getBalance(signer2.address)).to.equal(BigInt(previousBalance) + BigInt(ethers.utils.parseEther("0.5")))
+    expect(await signer2.getBalance()).to.equal(
+      previousBalance.add(ethers.utils.parseEther("0.5"))
+    )
   });
 });

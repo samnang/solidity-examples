@@ -18,9 +18,9 @@ describe("Solidity By Examples / Payable Modifier", function () {
     await contract.withdraw(5);
     expect(await contract.provider.getBalance(contract.address)).to.equal(95)
 
-    currentBalance = await contract.provider.getBalance(signer.address)
+    const balanceBeforeTransfer = await signer.getBalance();
     await contract.transfer(signer.address, 10);
     expect(await contract.provider.getBalance(contract.address)).to.equal(85)
-    expect(await contract.provider.getBalance(signer.address)).to.equal(BigInt(currentBalance) + BigInt(10))
+    expect(await signer.getBalance()).to.equal(balanceBeforeTransfer.add(10))
   });
 });

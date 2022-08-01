@@ -13,12 +13,17 @@ describe("Solidity By Examples / Contract Cleanup", function () {
   });
 
   it("Should be able to verify all variable values", async function () {
-    const oldBalance = await contract.provider.getBalance(owner.address)
+    const oldBalance = await owner.getBalance();
 
-    await contract.kill();
+    const tx = await contract.kill();
+    const txReceipt = await tx.wait();
+    const txFees = txReceipt.gasUsed.mul(txReceipt.effectiveGasPrice);
 
-    const newBalance = await contract.provider.getBalance(owner.address)
-    const result = BigInt(newBalance) > BigInt(oldBalance);
-    expect(result).to.be.true;
+    const newBalance = await owner.getBalance();
+    expect(newBalance).to.eq(
+      oldBalance
+        .add(ethers.utils.parseEther("1"))
+        .sub(txFees)
+    );
   });
 });

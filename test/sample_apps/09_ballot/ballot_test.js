@@ -26,7 +26,7 @@ describe("Sample Apps / Ballot", function () {
 
     await expect(
       contract.connect(account1).giveRightToVote(account2.address)
-    ).to.be.revertedWith("Only chairperson can give right to vote");
+    ).to.be.revertedWith("Only chairperson can give right to vote.");
   })
 
   it("should only allow to vote by chairperson", async function () {
@@ -40,7 +40,7 @@ describe("Sample Apps / Ballot", function () {
 
     await expect(
       contract.connect(publicAccount).vote(proposals.indexOf("Apple"))
-    ).to.be.revertedWith("Has no right to vote");
+    ).to.be.revertedWith("Has no right to vote.");
   })
 
   it("should only vote only once", async function () {
@@ -51,7 +51,7 @@ describe("Sample Apps / Ballot", function () {
 
     await expect(
       contract.connect(account).vote(proposals.indexOf("Apple"))
-    ).to.be.revertedWith("Already voted");
+    ).to.be.revertedWith("Already voted.");
   })
 
   it("should be able to delegate vote", async function () {
@@ -65,7 +65,7 @@ describe("Sample Apps / Ballot", function () {
 
     await expect(
       contract.connect(votedAccount).delegate(delegatee.address)
-    ).to.be.revertedWith("You already voted");
+    ).to.be.revertedWith("You already voted.");
 
     await expect(
       contract.connect(delegator).delegate(delegatee.address)

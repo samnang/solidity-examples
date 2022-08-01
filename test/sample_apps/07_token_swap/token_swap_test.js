@@ -1,4 +1,4 @@
-const { expect } = require("chai");
+ const { expect } = require("chai");
 const { ethers } = require("hardhat");
 
 describe("Sample Apps / Token Swap", function () {
@@ -30,8 +30,8 @@ describe("Sample Apps / Token Swap", function () {
     await xyzContract.approve(contract.address, ethers.utils.parseEther("100"));
 
     await contract.connect(signer1).swap(
-      ethers.utils.parseEther("1"),
-      ethers.utils.parseEther("2")
+      ethers.utils.parseEther("1"),  // amount in ABC token
+      ethers.utils.parseEther("2")   // amount in XYZ token
     );
 
     expect(await abcContract.balanceOf(signer1.address)).to.equal(ethers.utils.parseEther("99"));
