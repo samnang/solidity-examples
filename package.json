@@ -19,7 +19,7 @@
     "@nomiclabs/hardhat-etherscan": "^3.0.0",
     "@typechain/ethers-v5": "^10.1.0",
     "@typechain/hardhat": "^6.1.2",
-    "@types/chai": "^4.2.0",
+    "@types/chai": "^4.3.1",
     "@types/mocha": "^9.1.0",
     "@types/node": ">=12.0.0",
     "@openzeppelin/contracts": "^4.7.2",
