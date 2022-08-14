@@ -48,6 +48,7 @@ $ npx hardhat test
 7. [Swap Token](contracts/sample_apps/07_token_swap/)
 8. [ETH Game](contracts/sample_apps/08_eth_game/)
 9. [Ballot](contracts/sample_apps/09_ballot/)
+9. [Vault / Liquidity Pool](contracts/sample_apps/10_vault/)
 
 ## Solidity by Examples
 1. [Ether Wallet](contracts/solidity_by_examples/01_ether_wallet/)
