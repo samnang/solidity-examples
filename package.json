@@ -10,7 +10,7 @@
   "author": "Samnang Chhun",
   "license": "MIT",
   "devDependencies": {
-    "@ethersproject/abi": "^5.4.7",
+    "@ethersproject/abi": "^5.7.0",
     "@ethersproject/providers": "^5.4.7",
     "@nomicfoundation/hardhat-chai-matchers": "^1.0.3",
     "@nomicfoundation/hardhat-network-helpers": "^1.0.4",
