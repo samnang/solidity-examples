@@ -27,7 +27,7 @@
     "ethers": "^5.7.0",
     "hardhat": "^2.11.0",
     "hardhat-gas-reporter": "^1.0.9",
-    "solidity-coverage": "^0.7.21",
+    "solidity-coverage": "^0.7.22",
     "solidity-shell": "^0.2.2",
     "ts-node": ">=8.0.0",
     "typechain": "^8.1.0",
