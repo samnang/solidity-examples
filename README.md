@@ -39,6 +39,7 @@ $ npx hardhat test
 24. [Interface](contracts/getting_started_with_solidity/24_interface/)
 
 ## Sample Apps
+
 1. [Sample Contract](contracts/sample_apps/01_sample_contract/)
 2. [Address Book](contracts/sample_apps/02_address_book/)
 3. [Hotel Room](contracts/sample_apps/03_hotel/)
@@ -48,18 +49,20 @@ $ npx hardhat test
 7. [Swap Token](contracts/sample_apps/07_token_swap/)
 8. [ETH Game](contracts/sample_apps/08_eth_game/)
 9. [Ballot](contracts/sample_apps/09_ballot/)
-9. [Vault / Liquidity Pool](contracts/sample_apps/10_vault/)
+10. [Vault / Liquidity Pool](contracts/sample_apps/10_vault/)
 
 ## Solidity by Examples
+
 1. [Ether Wallet](contracts/solidity_by_examples/01_ether_wallet/)
 1. [Multi Sig Wallet](contracts/solidity_by_examples/02_multi_sig_wallet/)
+1. [Wrapped ETH (WETH)](contracts/solidity_by_examples/03_WETH/)
 
 ## Contributors
 
 We love pull requests from everyone. By participating in submitting examples, we believe other people will find them useful when they getting started with Solidity.
 
-* [Samnang Chhun](https://twitter.com/samnangchhun)
-* [Web3 Together](https://twitter.com/web3together)
+- [Samnang Chhun](https://twitter.com/samnangchhun)
+- [Web3 Together](https://twitter.com/web3together)
 
 ## License
 
