@@ -5,7 +5,9 @@ describe("Sample Apps / Sample Contract", function () {
   let contract;
 
   beforeEach(async () => {
-    const Contract = await ethers.getContractFactory("contracts/sample_apps/01_sample_contract/MyContract.sol:MyContract");
+    const Contract = await ethers.getContractFactory(
+      "contracts/sample_apps/01_sample_contract/MyContract.sol:MyContract"
+    );
     contract = await Contract.deploy();
     await contract.deployed();
   });

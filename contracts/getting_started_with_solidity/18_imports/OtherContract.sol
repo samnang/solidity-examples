@@ -5,7 +5,7 @@
 pragma solidity ^0.8.0;
 
 contract OtherContract {
-  function sum(uint a, uint b) public pure returns(uint) {
-    return a + b;
-  }
+    function sum(uint256 a, uint256 b) public pure returns (uint256) {
+        return a + b;
+    }
 }

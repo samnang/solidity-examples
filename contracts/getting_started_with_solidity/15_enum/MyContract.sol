@@ -5,18 +5,18 @@
 pragma solidity ^0.8.0;
 
 contract MyContract {
-  enum Status {
-    Pending,
-    Shipped,
-    Accepted,
-    Rejected,
-    Canceled
-  }
+    enum Status {
+        Pending,
+        Shipped,
+        Accepted,
+        Rejected,
+        Canceled
+    }
 
-  Status public status;
+    Status public status;
 
-  function ship() public {
-    require(status == Status.Pending);
-    status = Status.Shipped;
-  }
+    function ship() public {
+        require(status == Status.Pending);
+        status = Status.Shipped;
+    }
 }

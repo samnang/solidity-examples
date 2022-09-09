@@ -7,8 +7,11 @@ describe("Solidity By Examples / Contract Cleanup", function () {
 
   beforeEach(async () => {
     [owner] = await ethers.getSigners();
-    const Contract = await ethers.getContractFactory("contracts/getting_started_with_solidity/19_contract_cleanup/MyContract.sol:MyContract", owner);
-    contract = await Contract.deploy({value: ethers.utils.parseEther("1")});
+    const Contract = await ethers.getContractFactory(
+      "contracts/getting_started_with_solidity/19_contract_cleanup/MyContract.sol:MyContract",
+      owner
+    );
+    contract = await Contract.deploy({ value: ethers.utils.parseEther("1") });
     await contract.deployed();
   });
 
@@ -20,10 +23,6 @@ describe("Solidity By Examples / Contract Cleanup", function () {
     const txFees = txReceipt.gasUsed.mul(txReceipt.effectiveGasPrice);
 
     const newBalance = await owner.getBalance();
-    expect(newBalance).to.eq(
-      oldBalance
-        .add(ethers.utils.parseEther("1"))
-        .sub(txFees)
-    );
+    expect(newBalance).to.eq(oldBalance.add(ethers.utils.parseEther("1")).sub(txFees));
   });
 });

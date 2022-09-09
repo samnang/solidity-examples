@@ -7,9 +7,9 @@ pragma solidity ^0.8.0;
 import "./OtherContract.sol";
 
 contract MyContract {
-  OtherContract public otherContract = new OtherContract();
+    OtherContract public otherContract = new OtherContract();
 
-  function callOtherContract(uint a, uint b) public view returns(uint) {
-    return otherContract.sum(a, b);
-  }
+    function callOtherContract(uint256 a, uint256 b) public view returns (uint256) {
+        return otherContract.sum(a, b);
+    }
 }

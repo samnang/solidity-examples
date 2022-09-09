@@ -12,33 +12,36 @@ pragma solidity ^0.8.0;
 // It is the same concept as a gumball machine.
 
 contract HotelRoom {
-  //create an emun with 2 status so we can keep track of our hotel room
-  enum Statuses { Vacant, Occupied }
-  Statuses currentStatus;
+    //create an emun with 2 status so we can keep track of our hotel room
+    enum Statuses {
+        Vacant,
+        Occupied
+    }
+    Statuses currentStatus;
 
-  //create an event for others that want to subscribe to events like a smart lock to unlock the door
-  event Occupy(address _occupant, uint _value);
+    //create an event for others that want to subscribe to events like a smart lock to unlock the door
+    event Occupy(address _occupant, uint256 _value);
 
-  address payable public owner;
+    address payable public owner;
 
-  constructor() {
-    owner = payable(msg.sender);
-    currentStatus = Statuses.Vacant;
-  }
+    constructor() {
+        owner = payable(msg.sender);
+        currentStatus = Statuses.Vacant;
+    }
 
-  modifier onlyWhileVacant {
-    require(currentStatus == Statuses.Vacant, "Currently Occupied");
-    _;
-  }
+    modifier onlyWhileVacant() {
+        require(currentStatus == Statuses.Vacant, "Currently Occupied");
+        _;
+    }
 
-  modifier costs(uint _amount) {
-    require(msg.value >= _amount, "Not enough Ether provided");
-    _;
-  }
+    modifier costs(uint256 _amount) {
+        require(msg.value >= _amount, "Not enough Ether provided");
+        _;
+    }
 
-  receive() external payable onlyWhileVacant costs(2 ether) {
-    currentStatus = Statuses.Occupied;
-    owner.transfer(msg.value);
-    emit Occupy(msg.sender, msg.value);
-  }
+    receive() external payable onlyWhileVacant costs(2 ether) {
+        currentStatus = Statuses.Occupied;
+        owner.transfer(msg.value);
+        emit Occupy(msg.sender, msg.value);
+    }
 }

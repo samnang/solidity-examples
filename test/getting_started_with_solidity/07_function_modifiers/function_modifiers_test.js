@@ -7,7 +7,10 @@ describe("Solidity By Examples / Function Modifiers", function () {
 
   beforeEach(async () => {
     [owner, signer] = await ethers.getSigners();
-    const Contract = await ethers.getContractFactory("contracts/getting_started_with_solidity/07_function_modifiers/MyContract.sol:MyContract", owner);
+    const Contract = await ethers.getContractFactory(
+      "contracts/getting_started_with_solidity/07_function_modifiers/MyContract.sol:MyContract",
+      owner
+    );
     contract = await Contract.deploy();
     await contract.deployed();
   });

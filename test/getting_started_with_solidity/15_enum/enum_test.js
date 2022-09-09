@@ -5,7 +5,9 @@ describe("Solidity By Examples / Enum", function () {
   let contract;
 
   beforeEach(async () => {
-    const Contract = await ethers.getContractFactory("contracts/getting_started_with_solidity/15_enum/MyContract.sol:MyContract");
+    const Contract = await ethers.getContractFactory(
+      "contracts/getting_started_with_solidity/15_enum/MyContract.sol:MyContract"
+    );
     contract = await Contract.deploy();
     await contract.deployed();
   });

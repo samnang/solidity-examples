@@ -5,14 +5,14 @@
 pragma solidity ^0.8.0;
 
 contract MyContract {
-  address payable owner;
+    address payable owner;
 
-  constructor() payable {
-    owner = payable(msg.sender);
-  }
+    constructor() payable {
+        owner = payable(msg.sender);
+    }
 
-  function kill() public {
-    require(msg.sender == owner);
-    selfdestruct(owner);
-  }
+    function kill() public {
+        require(msg.sender == owner);
+        selfdestruct(owner);
+    }
 }

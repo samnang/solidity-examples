@@ -5,7 +5,9 @@ describe("Solidity By Examples / Mapping / NestedMapsContract", function () {
   let contract;
 
   beforeEach(async () => {
-    const Contract = await ethers.getContractFactory("contracts/getting_started_with_solidity/14_mapping/02_NestedMapsContract.sol:NestedMapsContract");
+    const Contract = await ethers.getContractFactory(
+      "contracts/getting_started_with_solidity/14_mapping/02_NestedMapsContract.sol:NestedMapsContract"
+    );
     contract = await Contract.deploy();
     await contract.deployed();
   });

@@ -7,7 +7,10 @@ describe("Sample Apps / Hotel", function () {
 
   beforeEach(async () => {
     [owner, signer1, signer2] = await ethers.getSigners();
-    const Contract = await ethers.getContractFactory("contracts/sample_apps/03_hotel/HotelRoom.sol:HotelRoom", owner);
+    const Contract = await ethers.getContractFactory(
+      "contracts/sample_apps/03_hotel/HotelRoom.sol:HotelRoom",
+      owner
+    );
     contract = await Contract.deploy();
     await contract.deployed();
   });
@@ -16,19 +19,19 @@ describe("Sample Apps / Hotel", function () {
     await expect(
       signer1.sendTransaction({
         to: contract.address,
-        value: ethers.utils.parseEther("1")
+        value: ethers.utils.parseEther("1"),
       })
     ).to.be.revertedWith("Not enough Ether provided");
 
     await signer1.sendTransaction({
       to: contract.address,
-      value: ethers.utils.parseEther("2")
+      value: ethers.utils.parseEther("2"),
     });
 
     await expect(
       signer1.sendTransaction({
         to: contract.address,
-        value: ethers.utils.parseEther("2")
+        value: ethers.utils.parseEther("2"),
       })
     ).to.be.revertedWith("Currently Occupied");
   });

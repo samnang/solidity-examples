@@ -7,7 +7,10 @@ describe("Sample Apps / Address Book", function () {
 
   beforeEach(async () => {
     [owner, contact1, contact2] = await ethers.getSigners();
-    const Contract = await ethers.getContractFactory("contracts/sample_apps/02_address_book/AddressBook.sol:AddressBook", owner);
+    const Contract = await ethers.getContractFactory(
+      "contracts/sample_apps/02_address_book/AddressBook.sol:AddressBook",
+      owner
+    );
     contract = await Contract.deploy();
     await contract.deployed();
   });

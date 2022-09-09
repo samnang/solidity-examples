@@ -5,11 +5,11 @@
 pragma solidity ^0.8.0;
 
 contract MyContract {
-  uint public loopCount;
+    uint256 public loopCount;
 
-  function doLoop(uint n) public {
-    for (uint i = 0; i < n; i++) {
-      loopCount += 1;
+    function doLoop(uint256 n) public {
+        for (uint256 i = 0; i < n; i++) {
+            loopCount += 1;
+        }
     }
-  }
 }
