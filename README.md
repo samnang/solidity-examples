@@ -1,5 +1,7 @@
 # Solidity Examples
 
+[![CI](https://github.com/samnang/solidity-examples/actions/workflows/build.yml/badge.svg)](https://github.com/samnang/solidity-examples/actions/workflows/build.yml)
+
 This is a collection of solidity examples that I practiced while I was learning about Solidity and writing smart contracts.
 
 Almost all contracts have tests with them, so I use them for playing around with Solidity programming language or business logic in the contract itself.
