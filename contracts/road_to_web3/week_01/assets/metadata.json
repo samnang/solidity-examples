@@ -1,0 +1,47 @@
+{
+  "description": "This NFT proves I've created and deployed my first ERC20 smart contract on Goerli with Alchemy Road to Web3",
+  "external_url": "https://docs.alchemy.com/docs/how-to-develop-an-nft-smart-contract-erc721-with-alchemy",
+  "image": "https://ipfs.filebase.io/ipfs/QmNfvdYEGQA9AM5mSKXRHzJz2GA8nwSxpAs75DuJvdQs2F",
+  "name": "A cool NFT",
+  "attributes": [
+    {
+      "trait_type": "Base",
+      "value": "Starfish"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Big"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Surprised"
+    },
+    {
+      "trait_type": "Level",
+      "value": 5
+    },
+    {
+      "trait_type": "Stamina",
+      "value": 1.4
+    },
+    {
+      "trait_type": "Personality",
+      "value": "Sad"
+    },
+    {
+      "display_type": "boost_number",
+      "trait_type": "Aqua Power",
+      "value": 40
+    },
+    {
+      "display_type": "boost_percentage",
+      "trait_type": "Stamina Increase",
+      "value": 10
+    },
+    {
+      "display_type": "number",
+      "trait_type": "Generation",
+      "value": 2
+    }
+  ]
+}

@@ -51,11 +51,15 @@ $ npx hardhat test
 9. [Ballot](contracts/sample_apps/09_ballot/)
 10. [Vault / Liquidity Pool](contracts/sample_apps/10_vault/)
 
+## Road to Web3
+
+1. [NFT Smart Contract ECR-721](contracts/road_to_web3/week_01/)
+
 ## Solidity by Examples
 
 1. [Ether Wallet](contracts/solidity_by_examples/01_ether_wallet/)
-1. [Multi Sig Wallet](contracts/solidity_by_examples/02_multi_sig_wallet/)
-1. [Wrapped ETH (WETH)](contracts/solidity_by_examples/03_WETH/)
+2. [Multi Sig Wallet](contracts/solidity_by_examples/02_multi_sig_wallet/)
+3. [Wrapped ETH (WETH)](contracts/solidity_by_examples/03_WETH/)
 
 ## Contributors
 
