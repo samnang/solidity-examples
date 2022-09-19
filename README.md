@@ -54,6 +54,7 @@ $ npx hardhat test
 ## Road to Web3
 
 1. [NFT Smart Contract ECR-721](contracts/road_to_web3/week_01/)
+2. [Buy Me A Coffee](contracts/road_to_web3/week_02/)
 
 ## Solidity by Examples
 
