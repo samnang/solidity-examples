@@ -52,6 +52,7 @@ $ npx hardhat test
 8. [ETH Game](contracts/sample_apps/08_eth_game/)
 9. [Ballot](contracts/sample_apps/09_ballot/)
 10. [Vault / Liquidity Pool](contracts/sample_apps/10_vault/)
+11. [Flash Loan](contracts/sample_apps/11_flash_loan/). (See more [resources](https://github.com/samnang/flash-loan-examples))
 
 ## Road to Web3
 
