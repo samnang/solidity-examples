@@ -53,6 +53,7 @@ $ npx hardhat test
 9. [Ballot](contracts/sample_apps/09_ballot/)
 10. [Vault / Liquidity Pool](contracts/sample_apps/10_vault/)
 11. [Flash Loan](contracts/sample_apps/11_flash_loan/). (See more [resources](https://github.com/samnang/flash-loan-examples))
+12. [Uniswap - Simple Swap](contracts/sample_apps/12_uniswap_simple_swap/)
 
 ## Road to Web3
 
