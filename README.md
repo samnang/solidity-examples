@@ -4,7 +4,7 @@
 
 This is a collection of solidity examples that I practiced while I was learning about Solidity and writing smart contracts.
 
-Almost all contracts have tests with them, so I use them for playing around with Solidity programming language or business logic in the contract itself.
+Almost all smart contracts have tests with them, so feel free to play around with them to understand more about Solidity programming language or business logic in the contract itself.
 
 ## How to Run
 
