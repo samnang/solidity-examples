@@ -20,6 +20,7 @@ describe("Road to Web3 / Week 02 / Buy Me A Coffee", function () {
     newMintedTokenId = 1;
     expect(await contract.ownerOf(newMintedTokenId)).to.eq(minter.address);
     expect(await contract.getLevels(newMintedTokenId)).to.eq("0");
+    expect(await contract.getTokenURI(newMintedTokenId)).not.to.be.empty;
   });
 
   it("Should be able to train", async function () {
@@ -28,6 +29,6 @@ describe("Road to Web3 / Week 02 / Buy Me A Coffee", function () {
     newMintedTokenId = 1;
     await contract.connect(minter).train(newMintedTokenId);
 
-    expect(await contract.getLevels(newMintedTokenId)).to.eq("1");
+    expect(await contract.getLevels(newMintedTokenId)).to.not.eq("0");
   });
 });
