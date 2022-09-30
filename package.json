@@ -42,6 +42,6 @@
   "dependencies": {
     "@uniswap/v3-core": "^1.0.1",
     "@uniswap/v3-periphery": "^1.4.2",
-    "dotenv": "^16.0.2"
+    "dotenv": "^16.0.3"
   }
 }
