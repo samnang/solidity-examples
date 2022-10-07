@@ -1,7 +1,7 @@
 const { expect } = require("chai");
 const { ethers } = require("hardhat");
 
-describe("Solidity By Examples / Visibility", function () {
+describe("Getting Started with Solidity / Visibility", function () {
   let contract;
 
   beforeEach(async () => {

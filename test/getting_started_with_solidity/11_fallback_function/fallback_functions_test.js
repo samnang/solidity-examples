@@ -1,7 +1,7 @@
 const { expect } = require("chai");
 const { ethers } = require("hardhat");
 
-describe("Solidity By Examples / Fallback Function", function () {
+describe("Getting Started with Solidity / Fallback Function", function () {
   let contract;
   let owner;
 

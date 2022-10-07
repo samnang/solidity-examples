@@ -1,7 +1,7 @@
 const { expect } = require("chai");
 const { ethers } = require("hardhat");
 
-describe("Solidity By Examples / Pure and View Functions", function () {
+describe("Getting Started with Solidity / Pure and View Functions", function () {
   let contract;
 
   beforeEach(async () => {

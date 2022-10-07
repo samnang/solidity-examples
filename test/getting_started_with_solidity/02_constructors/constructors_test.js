@@ -1,7 +1,7 @@
 const { expect } = require("chai");
 const { ethers } = require("hardhat");
 
-describe("Solidity By Examples / Constructors", function () {
+describe("Getting Started with Solidity / Constructors", function () {
   let contract;
   let owner;
 

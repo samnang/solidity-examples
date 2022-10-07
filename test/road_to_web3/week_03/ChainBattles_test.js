@@ -15,7 +15,8 @@ describe("Road to Web3 / Week 03 / NFTs with On-Chain Metadata", function () {
   });
 
   it("Should mint a new NFT token", async function () {
-    await contract.connect(minter).mint();
+    const txn = await contract.connect(minter).mint();
+    await txn.wait();
 
     newMintedTokenId = 1;
     expect(await contract.ownerOf(newMintedTokenId)).to.eq(minter.address);
@@ -27,7 +28,8 @@ describe("Road to Web3 / Week 03 / NFTs with On-Chain Metadata", function () {
     await contract.connect(minter).mint();
 
     newMintedTokenId = 1;
-    await contract.connect(minter).train(newMintedTokenId);
+    const txn = await contract.connect(minter).train(newMintedTokenId);
+    await txn.wait();
 
     expect(await contract.getLevels(newMintedTokenId)).to.not.eq("0");
   });
