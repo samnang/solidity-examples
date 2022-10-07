@@ -1,7 +1,7 @@
 const { expect } = require("chai");
 const { ethers } = require("hardhat");
 
-describe("Road to Web3 / Week 02 / Buy Me A Coffee", function () {
+describe("Road to Web3 / Week 03 / NFTs with On-Chain Metadata", function () {
   let contract;
   let deployer, minter;
 

@@ -60,7 +60,8 @@ $ npx hardhat test
 1. [NFT Smart Contract ECR-721](contracts/road_to_web3/week_01/)
 2. [Buy Me A Coffee](contracts/road_to_web3/week_02/)
 3. [NFTs with On-Chain Metadata](contracts/road_to_web3/week_03/)
-3. [NFT Gallery](contracts/road_to_web3/week_04/nft_gallery/)
+4. [NFT Gallery](contracts/road_to_web3/week_04/nft_gallery/)
+5. [Connect APIs to your Smart Contracts using Chainlink](contracts/road_to_web3/week_05/)
 
 ## Solidity by Examples
 
