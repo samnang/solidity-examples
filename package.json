@@ -27,7 +27,7 @@
     "@typechain/hardhat": "^6.1.5",
     "@types/chai": "^4.3.4",
     "@types/mocha": "^9.1.0",
-    "@types/node": ">=18.14.1",
+    "@types/node": ">=18.14.2",
     "chai": "^4.3.7",
     "ethers": "^5.7.2",
     "hardhat": "^2.12.7",
