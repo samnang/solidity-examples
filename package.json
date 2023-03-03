@@ -30,7 +30,7 @@
     "@types/node": ">=18.14.4",
     "chai": "^4.3.7",
     "ethers": "^5.7.2",
-    "hardhat": "^2.12.7",
+    "hardhat": "^2.13.0",
     "hardhat-gas-reporter": "^1.0.9",
     "prettier": "^2.8.4",
     "solidity-coverage": "^0.7.22",
