@@ -32,7 +32,7 @@
     "ethers": "^5.7.2",
     "hardhat": "^2.14.0",
     "hardhat-gas-reporter": "^1.0.9",
-    "prettier": "^2.8.7",
+    "prettier": "^2.8.8",
     "solidity-coverage": "^0.7.22",
     "solidity-shell": "^0.2.4",
     "ts-node": ">=8.0.0",
