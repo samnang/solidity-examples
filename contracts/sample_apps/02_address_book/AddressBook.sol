@@ -29,7 +29,6 @@ contract AddressBook {
                     contacts[msg.sender][i] = contacts[msg.sender][length - 1];
                 }
 
-                delete contacts[msg.sender][length - 1];
                 contacts[msg.sender].pop();
 
                 delete aliases[msg.sender][contactAddress];
