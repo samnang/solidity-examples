@@ -40,7 +40,7 @@
     "typescript": ">=5.1.6"
   },
   "dependencies": {
-    "@chainlink/contracts": "^0.6.1",
+    "@chainlink/contracts": "^0.8.0",
     "@uniswap/v3-core": "^1.0.1",
     "@uniswap/v3-periphery": "^1.4.4",
     "dotenv": "^16.3.1"
